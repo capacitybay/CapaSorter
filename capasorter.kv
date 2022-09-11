@@ -1,0 +1,410 @@
+#:import utils kivy.utils
+<MainWidget>:
+    BoxLayout:
+        canvas.before:
+            Color:
+                rgba:(0,1,1,1)
+            Rectangle:
+                pos:self.pos
+                size:self.size
+        orientation: "vertical"
+        size: root.width, root.height
+        GridLayout:
+            cols:2
+
+            BoxLayout:
+                size_hint:(.7,1)
+                orientation:"vertical"
+#                padding:15
+#                spacing:5
+                canvas.before:
+                    Color:
+                        rgba:(0,157/255,86/255,1)
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+                BoxLayout:
+                    size_hint_y:None
+                    height:110
+                    padding:10
+
+#                    canvas.before:
+#                        Color:
+#                            rgba:(0,17/255,29/255,1)
+#                        Rectangle:
+#                            size:self.size
+#                            pos:self.pos
+                    AnchorLayout:
+                        anchor_x:"center"
+                        Image:
+                            size_hint: None, None
+                            size: '100dp', '100dp'
+                            source: 'image/CapacityBay.png'
+                BoxLayout:
+                    size_hint_y:None
+                    height: "40dp"
+                    AnchorLayout:
+#                        anchor_y:"top"
+#                        canvas.before:
+#                            Color:
+#                                rgba:(0,157/255,26/255,1)
+#                            Rectangle:
+#                                size:self.size
+#                                pos:self.pos
+                        Image:
+                            size_hint: None, None
+                            size: '60dp', '60dp'
+                            source: 'image/About.png'
+
+                BoxLayout:
+                    size_hint_y:None
+                    size_hint_y:"100dp"
+                    padding:10
+#                    canvas.before:
+#                        Color:
+#                            rgba:(0,127/255,202/255,1)
+#                        Rectangle:
+#                            size:self.size
+#                            pos:self.pos
+                    AnchorLayout:
+
+                        anchor_y:"top"
+#                        canvas.before:
+#                            Color:
+#                                rgba:(0,107/255,21/255,1)
+#                            Rectangle:
+#                                size:self.size
+#                                pos:self.pos
+
+                        Label:
+#                            size_hint:1,None/
+#                            height:"100dp"
+        #                        size_hint_y: None
+                            text_size: self.width, self.height
+#                            canvas.before:
+#                                Color:
+#                                    rgba:(1,17/255,12/255,1)
+#                                Rectangle:
+#                                    size:self.size
+#                                    pos:self.pos
+                            font_size:13
+                            text:"Welcome to Capacity Bay, Inc., the practical and hands-on eLearning platform and organization established to revolutionize learning and workforce development training for U. S. Veterans, transitioning service members, New Americans, immigrants, refugees as well as others in areas of substantial unemployment and technology deprived communities such as sub-Sahara Africa and other parts of the world. We also provide integrated IT consulting services for individuals, businesses and government agencies."
+                            color:(1,1,1,1)
+
+#start of news letter section
+#the newsletter will make an api request to the capacityBay Email server
+
+                BoxLayout:
+                    orientation: "vertical"
+                    size_hint:(1,"90dp")
+                    padding:7
+#                    canvas.before:
+#                        Color:
+#                            rgba:(0,0,0,1)
+#                        Rectangle:
+#                            size:self.size
+#                            pos:self.pos
+#                    AnchorLayout:
+##                        size_hint:1,None
+##                        height:"70dp"
+#                        anchor_y: "top"
+#                        canvas.before:
+#                            Color:
+#                                rgba:(1,17/255,12/255,1)
+#                            Rectangle:
+#                                size:self.size
+#                                pos:self.pos
+                    Label:
+                        size_hint:1,None
+                        height:"25dp"
+                        size_hint_y: None
+#                            font_size:16
+                        text_size: self.width, self.height
+                        text: "For more info:"
+                        color:(1,1,1,1)
+                    BoxLayout:
+
+                        Label:
+                            size_hint:.25,None
+                            height:"20dp"
+#                                width:60
+                            text_size: self.width, self.height
+                            text: "Website:"
+                            font_size: "12dp"
+                            color:(1,245/255,0,1)
+                        Label:
+                            size_hint:1,None
+                            height:"20dp"
+                            font_size: "12dp"
+                            size_hint_y: None
+                            text_size: self.width, self.height
+                            text: "www.capacitybay.org:"
+                            color:(1,1,1,1)
+                    BoxLayout:
+                        Label:
+                            size_hint:.18,None
+                            height:"20dp"
+                            font_size: "12dp"
+                            text_size: self.width, self.height
+                            text: "Email:"
+                            color:(1,245/255,0,1)
+
+                        Label:
+                            size_hint:1,None
+                            font_size: "12dp"
+                            height:"20dp"
+                            size_hint_y: None
+                            text_size: self.width, self.height
+                            text: "info@capacitybay.org"
+#                            color:(1,245/255,0,1)
+                    BoxLayout:
+                        Label:
+                            size_hint:.18,None
+                            height:"20dp"
+                            font_size: "12dp"
+                            text_size: self.width, self.height
+                            text: "Phone"
+                            color:(1,245/255,0,1)
+
+                        Label:
+                            size_hint:1,None
+                            font_size: "11dp"
+                            height:"20dp"
+                            text_size: self.width, self.height
+                            text: "+1 (301) 304-1BAY"
+#Email: info@capacitybay.org
+#Phone: :"
+#                                color:(1,1,1,1)
+
+                    AnchorLayout:
+                        size_hint:1,None
+                        height:"70dp"
+                        anchor_y: "top"
+                        canvas.before:
+                            Color:
+                                rgba:(.7,13/255,12/255,1)
+                            Rectangle:
+                                size:self.size
+                                pos:self.pos
+
+
+
+
+            BoxLayout:
+                orientation:"vertical"
+                spacing:10
+                padding:10
+                canvas.before:
+
+                    Color:
+                        rgba:(1,1,1,1)
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+                AnchorLayout:
+
+#                    canvas.before:
+#                        Color:
+#                            rgba:(1,0,1,1)
+#                        Rectangle:
+#                            size:self.size
+#                            pos:self.pos
+                    size_hint:(1,None)
+                    height:50
+                    anchor_y:"center"
+                    Image:
+                        text:"ttue"
+                        size_hint: (1, None)
+                        height:"30dp"
+                        source: 'image/Header.png'
+
+    #                            pos_hint:{"top":.9,"center_x":0.5,}
+
+#                        allow_stretch:True
+                        keep_ratio: False
+
+                GridLayout:
+                    cols:2
+                    spacing:10
+#                    canvas.before:
+#
+#                        Color:
+#                            rgba:(0,23/255,43/255,1)
+#                        Rectangle:
+#                            size:self.size
+#                            pos:self.pos
+                    BoxLayout:
+                        orientation: "vertical"
+                        spacing:"20dp"
+#source button row
+                        AnchorLayout:
+#                            canvas.before:
+#                                Color:
+#                                    rgba:(0,1,0,1)
+#                                Rectangle:
+#                                    size:self.size
+#                                    pos:self.pos
+                            anchor_x:"center"
+                            anchor_y:"center"
+                            size_hint:(1,100)
+                            RoundedButton:
+                                text:"Source"
+                                size_hint:(None,None)
+                                height:"35dp"
+
+#image row
+                        AnchorLayout:
+                            spacing:5
+                            size_hint:(1,"200dp")
+                            anchor_y:"top"
+#                            canvas.before:
+#                                Color:
+#                                    rgba:(0,0,1,1)
+#                                Rectangle:
+#                                    size:self.size
+#                                    pos:self.pos
+                            Image:
+#                                text:"ttue"
+                                size_hint: None, None
+                                size: '100dp', '100dp'
+                                source: 'image/icons8-folder-144.png'
+
+    #                            pos_hint:{"top":.9,"center_x":0.5,}
+
+                                allow_stretch:True
+                                keep_ratio: False
+                            AnchorLayout:
+                                anchor_y:"bottom"
+                                Label:
+                                    text:"/Desktop/CapaSorter"
+                                    color:(0,0,0,1)
+                                    font_size:14
+                                    halign:"left"
+                                    size_hint:(1,None)
+                                    height: "30dp"
+                                    canvas.before:
+                                        Color:
+                                            rgba:(1,1,1,1)
+                                        Rectangle:
+                                            size:self.size
+                                            pos:self.pos
+
+#                  destination column
+                    BoxLayout:
+                        orientation: "vertical"
+                        spacing:"20dp"
+#source button row
+                        AnchorLayout:
+#                            canvas.before:
+#                                Color:
+#                                    rgba:(1,0,0,1)
+#                                Rectangle:
+#                                    size:self.size
+#                                    pos:self.pos
+                            size_hint:(1,100)
+
+                            anchor_x:"center"
+                            RoundedButton:
+                                text:"Destination"
+                                size_hint:(None,None)
+                                height:"35dp"
+#   image row
+                        AnchorLayout:
+#                            spacing:5
+                            anchor_x:"center"
+                            size_hint:(1,"200dp")
+#                            canvas.before:
+#                                Color:
+#                                    rgba:(0,1,0,1)
+#                                Rectangle:
+#                                    size:self.size
+#                                    pos:self.pos
+                            AnchorLayout:
+                                anchor_y:"top"
+                                Image:
+                                    size_hint: None, None
+                                    size: '100dp', '100dp'
+                                    source: 'image/icons8-folder-144.png'
+                                    allow_stretch:True
+                                    keep_ratio: False
+                                AnchorLayout:
+                                    anchor_y:"bottom"
+                                    Label:
+                                        text:"/Desktop/CapaSorter"
+                                        color:(0,0,0,1)
+                                        font_size:14
+                                        size_hint:(1,None)
+                                        height: "30dp"
+                                        canvas.before:
+                                            Color:
+                                                rgba:(1,1,1,1)
+                                            Rectangle:
+                                                size:self.size
+                                                pos:self.pos
+
+
+                BoxLayout:
+                    orientation:"vertical"
+                    spacing:20
+#                    size_hint:(1,.8)
+#                    canvas.before:
+#                        Color:
+#                            rgba:(1,1,0,1)
+#                        Rectangle:
+#                            pos:self.pos
+#                            size:self.size
+                    AnchorLayout
+                        anchor_x:"center"
+                        RoundedButton:
+                            markup:True
+                            text: "Sort"
+                            size_hint:(None,None)
+                            background_color:(0,157/255,86/255,1)
+                            height:"30dp"
+                            pos_hint_x:.5
+                            on_press: root.start_sort()
+
+                    ProgressBar:
+                        max: 1
+                        min: 0
+                        value: .5
+#                        bo
+#                        size_hint:(1,20)
+#                    MDRaisedButton:
+#                        text: "MDRAISEDBUTTON"
+#                        md_bg_color: 1, 0, 1, 1
+                    AnchorLayout:
+                        RoundedButton:
+                            text:"Cancel"
+                            size_hint:(None,None)
+                            background_normal:""
+                            background_color:(1,0,0,1)
+                            height:"35dp"
+                            on_press: root.cancel_sort()
+#    Footer layout
+
+        BoxLayout:
+            size_hint_y: None
+            height:30
+            cols:1
+            Label:
+                text:"Copyright © 2022 CapacityBay, Inc."
+                background_color: (0,157/255,86/255,1)
+                canvas.before:
+                    Color:
+                        rgba:self.background_color
+                    Rectangle:
+                        size:self.size
+                        pos:self.pos
+
+#cutom Button
+<RoundedButton@Button>
+    background_color:(0, 0, 0, 0)
+    background_normal:""
+    canvas.before:
+        Color:
+            rgba:(252/255, 123/255, 50/255, 1)
+        RoundedRectangle:
+            size:self.size
+            pos:self.pos
+            radius: [8]

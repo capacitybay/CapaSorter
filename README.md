@@ -1,7 +1,7 @@
 # CAPA-SORTER
 
 
-<img src="images/CapacityBay-Logo1.png" width="200px" height="200px">
+<p align="center"><img src="images/CapacityBay-Logo1.png" width="200px" height="200px"></p>
 
 Pure Python script for Sorting and Arranging Files in a Directory
 

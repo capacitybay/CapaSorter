@@ -1,6 +1,5 @@
 # CAPA-SORTER
 
-
 <p align="center"><img src="images/CapacityBay-Logo1.png" width="200px" height="200px"></p>
 
 Pure Python script for Sorting and Arranging Files in a Directory
@@ -27,4 +26,9 @@ The program will then loop through each file in the directory, check its file ex
 This program is licensed under the MIT License. See the LICENSE file for more information.
 
 ## Acknowledgements
-This program was created by [Brian Obot](https://brianobot.github.io) . Special thanks to the [CapacityBay](https://capacitybay.org/) team for their work on the encouraging and facilatating open source software like this.
+This program was created by [CapacityBay](https://capacitybay.org) . Special thanks to the [CapacityBay](https://capacitybay.org/) Tech team for their work on the encouraging and facilatating open source software like this.
+
+
+## Maintainers
+- [Brian Obot]("https://brianobot.github.io/") <brianobot9@gmail.com>
++ *Add your name and email address as a maintainer*

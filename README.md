@@ -31,4 +31,4 @@ This program was created by [CapacityBay](https://capacitybay.org) . Special tha
 
 ## Maintainers
 - [Brian Obot]("https://brianobot.github.io/") <brianobot9@gmail.com>
-+ *Add your name and email address as a maintainer*
++ *Add your name and email address as a maintainer*.
